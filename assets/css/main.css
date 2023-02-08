@@ -2030,7 +2030,9 @@ input, select, textarea {
 		}
 
 		.icon > .label {
-			display: none;
+			
+		
+			display: table-footer-group;			
 		}
 
 		.icon:before {
@@ -2046,13 +2048,14 @@ input, select, textarea {
 		}
 
 		.icon.major {
-			-moz-transform: rotate(-45deg);
-			-webkit-transform: rotate(-45deg);
-			-ms-transform: rotate(-45deg);
-			transform: rotate(-45deg);
-			border-radius: 3px;
-			border: solid 2px #fff;
-			display: inline-block;
+			
+			-moz-transform: rotate(0deg);
+			-webkit-transform: rotate(0deg);
+			-ms-transform: rotate(0deg);
+			transform: rotate(0deg);
+			border-radius: 30px;
+			border: solid 0px #ffffff;
+			display: center;
 			font-size: 1.35em;
 			height: calc(3em + 2px);
 			line-height: 3em;
@@ -2078,7 +2081,7 @@ input, select, textarea {
 			}
 
 		.icon.style1 {
-			color: #00ffcc;
+			color: #f0eae8;
 		}
 
 		.icon.style2 {
@@ -2817,7 +2820,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background-color: #21b2a6;
+			background-color: #7cabb3; 
 			color: #c8ece9;
 		}
 
@@ -2980,8 +2983,8 @@ input, select, textarea {
 		}
 
 		.wrapper.style3 {
-			background-color: #505393;
-			color: #d3d4e4;
+			background-color: #7cabb3;
+			color: #e4e4ee;
 		}
 
 			.wrapper.style3 strong, .wrapper.style3 b {
@@ -3351,7 +3354,7 @@ input, select, textarea {
 		-ms-transition: -ms-transform 0.5s ease;
 		transition: transform 0.5s ease;
 		-webkit-overflow-scrolling: touch;
-		background: #21b2a6;
+		background: #7cabb3;
 		color: #ffffff;
 		height: 100%;
 		max-width: 80%;
