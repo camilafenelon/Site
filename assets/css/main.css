@@ -1775,7 +1775,7 @@ input, select, textarea {
 	}
 
 	header.major {
-		margin: 0 0 3.5em 0;
+		margin: 0 0 0em 0;
 	}
 
 		header.major h2, header.major h3, header.major h4, header.major h5, header.major h6 {
@@ -2032,7 +2032,8 @@ input, select, textarea {
 		.icon > .label {
 			
 		
-			display: table-footer-group;			
+			display: bottom;
+			font-size: 1.3em;			
 		}
 
 		.icon:before {
@@ -2040,7 +2041,13 @@ input, select, textarea {
 		}
 
 		.icon.solid:before {
+			display: block;
+			text-align: center;
 			font-weight: 900;
+			font-size: 2em;
+			margin-bottom: 15px;
+			margin-top: 50px;
+			
 		}
 
 		.icon.brands:before {
@@ -2048,17 +2055,17 @@ input, select, textarea {
 		}
 
 		.icon.major {
-			
+			margin-top: 0px;
 			-moz-transform: rotate(0deg);
 			-webkit-transform: rotate(0deg);
 			-ms-transform: rotate(0deg);
 			transform: rotate(0deg);
-			border-radius: 30px;
+			border-radius: 2px;
 			border: solid 0px #ffffff;
 			display: center;
-			font-size: 1.35em;
+			font-size: 2.35em;
 			height: calc(3em + 2px);
-			line-height: 3em;
+			line-height: 1em;
 			text-align: center;
 			width: calc(3em + 2px);
 		}
@@ -2317,7 +2324,7 @@ input, select, textarea {
 			}
 
 		ul.icons.major {
-			padding: 1em 0;
+			padding: 0em 0;
 		}
 
 			ul.icons.major li {
