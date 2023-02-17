@@ -2099,7 +2099,29 @@ input, select, textarea {
 			color: #76ddff;
 		}
 
+/*Slider */
+		.slider {
+			width: 300px;
+			height: 300px;
+			display: flex;
+			background-color: #4E4852;
+			overflow-x: auto;
+			-webkit-overflow-scrolling: touch;
+			scroll-snap-type: x mandatory; 
+			scroll-behavior: smooth;
+		  }
+		  .slide {
+			width: 300px;
+			flex-shrink: 0;
+			height: 100%;
+		  }
+		  .slides > div {
+			/* CURRENT way. */
+			scroll-snap-align: start;
+		  }
+
 /* Image */
+
 
 	.image {
 		border-radius: 3px;
@@ -4007,3 +4029,5 @@ input, select, textarea {
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+
+	
