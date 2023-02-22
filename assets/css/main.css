@@ -2100,25 +2100,118 @@ input, select, textarea {
 		}
 
 /*Slider */
-		.slider {
-			width: 300px;
-			height: 300px;
-			display: flex;
-			background-color: #4E4852;
-			overflow-x: auto;
-			-webkit-overflow-scrolling: touch;
-			scroll-snap-type: x mandatory; 
-			scroll-behavior: smooth;
-		  }
-		  .slide {
-			width: 300px;
-			flex-shrink: 0;
-			height: 100%;
-		  }
-		  .slides > div {
-			/* CURRENT way. */
-			scroll-snap-align: start;
-		  }
+* {box-sizing:border-box}
+.my-slideshow-container {
+	width: 100%;
+	position: relative;
+  }
+  
+  .my-slideshow-container .slide {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+  }
+  
+  .my-slideshow-container .slide img {
+	width: 100%;
+	height: auto;
+  }
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.mySlides2 {
+	display: none;
+  }
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 0px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 0px 0px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 0px 0 0 0px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #5cceb1;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.fade2 {
+	animation-name: fade;
+	animation-duration: 1.5s;
+  }
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
 
 /* Image */
 
@@ -2471,7 +2564,7 @@ input, select, textarea {
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: rgba(144, 144, 144, 0.25);
+			background-color: rgba(138, 120, 120, 0.25);
 		}
 
 		input[type="submit"]:active,
@@ -2479,7 +2572,7 @@ input, select, textarea {
 		input[type="button"]:active,
 		button:active,
 		.button:active {
-			background-color: rgba(144, 144, 144, 0.5);
+			background-color: rgba(212, 212, 212, 0.5);
 		}
 
 		input[type="submit"].icon:before,
@@ -2735,7 +2828,7 @@ input, select, textarea {
 		}
 
 		.spotlight:nth-child(1) {
-			background-color: rgba(0, 0, 0, 0.075);
+			background-color: rgba(62, 90, 82, 0.075);
 		}
 
 		.spotlight:nth-child(2) {
@@ -2882,7 +2975,7 @@ input, select, textarea {
 			}
 
 			.wrapper.style1 header.major p {
-				color: #c8ece9;
+				color: #f6fafa;
 			}
 
 			.wrapper.style1 label {
@@ -3788,8 +3881,9 @@ input, select, textarea {
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
-		display: flex;
+		display: absolute;
 		max-width: 45em;
+		height: 500px;
 	}
 
 		#cta .inner header {
@@ -3799,6 +3893,7 @@ input, select, textarea {
 			order: 1;
 			padding-right: 3em;
 			width: 70%;
+			height: 500px;
 		}
 
 			#cta .inner header p {
@@ -3917,8 +4012,8 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		padding: 6em 0 4em 0 ;
-		background-color: #1d242a;
+		padding: 2em 0 1em 0 ;
+		background-color: hwb(140 18% 75%);
 		text-align: center;
 	}
 
@@ -3927,7 +4022,7 @@ input, select, textarea {
 		}
 
 			#footer .icons a {
-				color: rgba(255, 255, 255, 0.5);
+				color: rgba(255, 255, 255, 0.356);
 			}
 
 				#footer .icons a:hover {
