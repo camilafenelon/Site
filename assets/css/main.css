@@ -3644,7 +3644,7 @@ button:disabled,
 	-ms-transition: -ms-transform 0.5s ease;
 	transition: transform 0.5s ease;
 	-webkit-overflow-scrolling: touch;
-	background: #bdb0b9;
+	background: #afb9aa;
 	color: #ffffff;
 	height: 100%;
 	max-width: 80%;
@@ -3797,7 +3797,7 @@ body.is-menu-visible #menu {
 
 #header nav>ul>li>a {
 	border: 0;
-	color: #bba0b4;
+	color: #afb9aa;
 	display: block;
 	font-size: 0.8em;
 	letter-spacing: 0.225em;
