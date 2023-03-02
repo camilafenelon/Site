@@ -1,6 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic");
-
+@import url('https://fonts.cdnfonts.com/css/glacial-indifference-2');
 /*
 	Spectral by HTML5 UP
 	html5up.net | @ajlkn
@@ -367,7 +367,7 @@ blockquote {
 code {
 	background: rgba(144, 144, 144, 0.25);
 	border-radius: 3px;
-	font-family: "Courier New", monospace;
+	font-family: 'Glacial Indifference', sans-serif;
 	font-size: 0.9em;
 	letter-spacing: 0;
 	margin: 0 0.25em;
@@ -376,7 +376,7 @@ code {
 
 pre {
 	-webkit-overflow-scrolling: touch;
-	font-family: "Courier New", monospace;
+	font-family: font-family: 'Glacial Indifference', sans-serif;
 	font-size: 0.9em;
 	margin: 0 0 2em 0;
 }
@@ -2318,7 +2318,7 @@ input[type="radio"]+label:before {
 	height: 20px;
 	width: 20px;
 	margin: 0 2px;
-	background-color: #bbb;
+	background-color: #ece5e5;
 	border-radius: 50%;
 	display: inline-block;
 	transition: background-color 0.6s ease;
@@ -2326,7 +2326,7 @@ input[type="radio"]+label:before {
 
 .active,
 .dot:hover {
-	background-color: #5cceb1;
+	background-color: #bba0b4;
 }
 
 /* Fading animation */
@@ -2817,7 +2817,7 @@ button:disabled,
 	list-style: none;
 	padding: 0;
 	width: 100%;
-	
+
 }
 
 .features li {
@@ -3083,8 +3083,8 @@ button:disabled,
 }
 
 .wrapper.style1 {
-	background-color: #485c50;
-	color: #c8ece9;
+	background-color: #70847f;
+	color: #dbebe9;
 }
 
 .wrapper.style1 strong,
@@ -3162,7 +3162,7 @@ button:disabled,
 .wrapper.style1 input[type="checkbox"]:checked+label:before,
 .wrapper.style1 input[type="radio"]:checked+label:before {
 	background: #ffffff;
-	color: #21b2a6;
+	color: #66c2ba;
 }
 
 .wrapper.style1 ::-webkit-input-placeholder {
@@ -3251,11 +3251,11 @@ button:disabled,
 }
 
 .wrapper.style2 {
-	background-color: #333c41;
+	background-color: #70847f;
 }
 
 .wrapper.style3 {
-	background-color: #3d4e44;
+	background-color: #4b6860;
 	color: #f1f1f5;
 }
 
@@ -3644,7 +3644,7 @@ button:disabled,
 	-ms-transition: -ms-transform 0.5s ease;
 	transition: transform 0.5s ease;
 	-webkit-overflow-scrolling: touch;
-	background: #999daf;
+	background: #bdb0b9;
 	color: #ffffff;
 	height: 100%;
 	max-width: 80%;
@@ -4276,6 +4276,7 @@ body.landing #footer {
 	background-color: rgba(29, 36, 42, 0.9);
 }
 
+
 body.is-mobile.landing #page-wrapper {
 	background: none;
 }
@@ -4292,5 +4293,5 @@ body.is-mobile.landing .wrapper.style4 {
 }
 
 body.is-mobile.landing #footer {
-	background-color: #1d242a;
+	background-color: rgba(29, 36, 42, 0.9);
 }
