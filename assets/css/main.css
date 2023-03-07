@@ -1924,6 +1924,7 @@ header.major p {
 @media screen and (max-width: 736px) {
 
 	header.major {
+		
 		margin: 0 0 2em 0;
 	}
 
@@ -2231,8 +2232,8 @@ input[type="radio"]+label:before {
 
 .my-slideshow-container {
 	width: 100%;
-	position: flex; 
-	animation: slide 1s infinite; 
+	position: flex;
+	animation: slide 1s infinite;
 }
 
 .my-slideshow-container .slide {
@@ -2240,13 +2241,13 @@ input[type="radio"]+label:before {
 	position: absolute;
 	top: 0;
 	left: 0;
-	animation: slide 1s infinite; 
+	animation: slide 1s infinite;
 }
 
 .my-slideshow-container .slide img {
 	width: 100%;
 	height: auto;
-	animation: slide 1s infinite; 
+	animation: slide 1s infinite;
 }
 
 /* Slideshow container */
@@ -2254,18 +2255,18 @@ input[type="radio"]+label:before {
 	max-width: 1000px;
 	position: relative;
 	margin: auto;
-	animation: slide 1s infinite; 
+	animation: slide 1s infinite;
 }
 
 /* Hide the images by default */
 .mySlides {
 	display: none;
-	
+
 }
 
 .mySlides2 {
 	display: none;
-	
+
 }
 
 /* Next & previous buttons */
@@ -2275,11 +2276,11 @@ input[type="radio"]+label:before {
 	position: absolute;
 	top: auto;
 	width: auto;
-	margin-top: -22px;
+	margin-top: 22px;
 	padding: 0px;
 	color: white;
 	font-weight: bold;
-	font-size: 20px;
+	font-size: 30px;
 	transition: 0.6s ease;
 	border-radius: 0 0px 0px 0;
 	user-select: none;
@@ -2332,7 +2333,7 @@ input[type="radio"]+label:before {
 
 .active,
 .dot:hover {
-	background-color: #bba0b4;
+	background-color: #838383;
 }
 
 /* Fading animation */
@@ -3475,7 +3476,8 @@ button:disabled,
 }
 
 .wrapper.style5 header.major p {
-	color: #4E4852;
+	color: #4b6860;
+
 }
 
 .wrapper.style5 label {
@@ -3745,15 +3747,37 @@ body.is-menu-visible #menu {
 	-ms-transition: background-color 0.2s ease;
 	transition: background-color 0.2s ease;
 	background: #2e3842;
+	
 	height: 3em;
 	left: 0;
 	line-height: 3em;
 	position: fixed;
 	top: 0;
+	left: 0;
+	right: 0;
+	top: 0;
 	width: 100%;
 	z-index: 10000;
 }
 
+
+#header h2:before,
+#header h2:after {
+	-moz-transition: width 0.85s ease;
+	-webkit-transition: width 0.85s ease;
+	-ms-transition: width 0.85s ease;
+	transition: width 0.85s ease;
+	-moz-transition-delay: 0.25s;
+	-webkit-transition-delay: 0.25s;
+	-ms-transition-delay: 0.25s;
+	transition-delay: 0.25s;
+	background: #fff;
+	content: '';
+	display: block;
+	height: 2px;
+	position: absolute;
+	width: 100%;
+}
 #header h1 {
 	-moz-transition: opacity 0.2s ease;
 	-webkit-transition: opacity 0.2s ease;
@@ -3762,7 +3786,7 @@ body.is-menu-visible #menu {
 	height: inherit;
 	left: 1.25em;
 	line-height: inherit;
-	position: absolute;
+	position: fixed;
 	top: 0;
 }
 
@@ -3803,7 +3827,7 @@ body.is-menu-visible #menu {
 
 #header nav>ul>li>a {
 	border: 0;
-	color: #afb9aa;
+	color: #f6f8f5;
 	display: block;
 	font-size: 0.8em;
 	letter-spacing: 0.225em;
@@ -3853,13 +3877,28 @@ body.is-menu-visible #menu {
 }
 
 #header.alt {
-	background: transparent;
+	background-color: transparent;
 }
 
-#header.alt h1 {
-	pointer-events: none;
-	opacity: 0;
+
+
+#header.alt h1:after {
+	-moz-transition: width 0.85s ease;
+	-webkit-transition: width 0.85s ease;
+	-ms-transition: width 0.85s ease;
+	transition: width 0.85s ease;
+	-moz-transition-delay: 0.25s;
+	-webkit-transition-delay: 0.25s;
+	-ms-transition-delay: 0.25s;
+	transition-delay: 0.25s;
+	background: #fff;
+	content: '';
+	display: block;
+	height: 2px;
+	position: absolute;
+	width: 100%;
 }
+
 
 /* Banner */
 
@@ -3880,8 +3919,9 @@ body.is-menu-visible #menu {
 	height: 100vh;
 	min-height: 35em;
 	overflow: hidden;
-	position: relative;
+	position: center;
 	text-align: center;
+	background-position: center 50%;
 }
 
 #banner h2 {
@@ -4011,6 +4051,7 @@ body.is-menu-visible #menu {
 		padding: 7em 3em 5em 3em;
 		height: auto;
 		min-height: 0;
+		background-size: contain;
 	}
 
 	#banner h2 {
@@ -4089,6 +4130,7 @@ body.is-preload #banner:after {
 
 	#cta .inner {
 		display: block;
+		background-size: contain;
 		text-align: center;
 	}
 
@@ -4118,12 +4160,13 @@ body.is-preload #banner:after {
 
 #main>header {
 	padding: 12em 0 10em 0;
-	background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/banner.jpg");
-	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/banner.jpg");
-	background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/banner.jpg");
-	background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/banner.jpg");
+	background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../../images/banner.jpg");
+	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../../images/banner.jpg");
+	background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../../images/banner.jpg");
+	background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../../images/banner.jpg");
 	background-attachment: fixed;
-	background-position: center center;
+	background-color: #2f422e56;
+	background-position: center -30%;
 	background-repeat: no-repeat;
 	background-size: cover;
 	text-align: center;
@@ -4268,15 +4311,17 @@ body.is-mobile #main>header {
 /* Landing */
 
 body.landing #page-wrapper {
-	background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/banner.jpg");
-	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/banner.jpg");
-	background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/banner.jpg");
-	background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/banner.jpg");
+	background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../../images/banner.jpg");
+	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../../images/banner.jpg");
+	background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../../images/banner.jpg");
+	background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../../images/banner.jpg");
 	background-attachment: fixed;
-	background-position: center center;
+	background-color: #2e3842;
+	background-position: center -0%;
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding-top: 0;
+	height: 100vh;
 }
 
 body.landing #footer {
@@ -4285,23 +4330,24 @@ body.landing #footer {
 
 
 body.is-mobile.landing #page-wrapper {
-	background: none;
+	background: contain;
+	background-size: contain;
+	background-position: center 50%;
 }
 
-body.is-mobile.landing #banner,
+body.is-mobile.landing #banner, 
 body.is-mobile.landing .wrapper.style4 {
 	background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/banner.jpg");
 	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/banner.jpg");
 	background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/banner.jpg");
 	background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/banner.jpg");
-	background-position: center center;
+	background-color: #2f422e;
+	background-position: center -0%;
 	background-repeat: no-repeat;
 	background-size: cover;
+
 }
 
 body.is-mobile.landing #footer {
 	background-color: rgba(29, 36, 42, 0.9);
 }
-
-
-
