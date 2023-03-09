@@ -1924,7 +1924,7 @@ header.major p {
 @media screen and (max-width: 736px) {
 
 	header.major {
-		
+
 		margin: 0 0 2em 0;
 	}
 
@@ -2082,7 +2082,7 @@ input[type="radio"]:checked+label:before {
 
 input[type="checkbox"]:focus+label:before,
 input[type="radio"]:focus+label:before {
-	box-shadow: 0 0 0 2px #21b2a6;
+	box-shadow: 0 0 0 2px #526d6b;
 }
 
 input[type="checkbox"]+label:before {
@@ -2276,7 +2276,7 @@ input[type="radio"]+label:before {
 	position: absolute;
 	top: auto;
 	width: auto;
-	margin-top: 22px;
+	margin-top: 20px;
 	padding: 0px;
 	color: white;
 	font-weight: bold;
@@ -3292,7 +3292,7 @@ button:disabled,
 }
 
 .wrapper.style3 header p {
-	color: #e1e1e9;
+	border-color: rgba(0, 0, 0, 0.125);
 }
 
 .wrapper.style3 header.major h2,
@@ -3472,7 +3472,7 @@ button:disabled,
 .wrapper.style5 header.major h4,
 .wrapper.style5 header.major h5,
 .wrapper.style5 header.major h6 {
-	border-color: #dfdfdf;
+	border-color: rgba(0, 0, 0, 0.125);
 }
 
 .wrapper.style5 header.major p {
@@ -3575,7 +3575,7 @@ button:disabled,
 .wrapper.style5 button,
 .wrapper.style5 .button {
 	box-shadow: inset 0 0 0 2px #dfdfdf;
-	color: #2E3842;
+	color: transparent;
 }
 
 .wrapper.style5 input[type="submit"]:hover,
@@ -3746,8 +3746,8 @@ body.is-menu-visible #menu {
 	-webkit-transition: background-color 0.2s ease;
 	-ms-transition: background-color 0.2s ease;
 	transition: background-color 0.2s ease;
-	background: #2e3842;
-	
+	background: transparent;
+
 	height: 3em;
 	left: 0;
 	line-height: 3em;
@@ -3778,6 +3778,7 @@ body.is-menu-visible #menu {
 	position: absolute;
 	width: 100%;
 }
+
 #header h1 {
 	-moz-transition: opacity 0.2s ease;
 	-webkit-transition: opacity 0.2s ease;
@@ -3827,7 +3828,7 @@ body.is-menu-visible #menu {
 
 #header nav>ul>li>a {
 	border: 0;
-	color: #f6f8f5;
+	color: #efffe6;
 	display: block;
 	font-size: 0.8em;
 	letter-spacing: 0.225em;
@@ -3848,7 +3849,7 @@ body.is-menu-visible #menu {
 	display: inline-block;
 	height: 3.75em;
 	vertical-align: top;
-	width: 2em;
+	width: 18px;
 }
 
 
@@ -3877,7 +3878,7 @@ body.is-menu-visible #menu {
 }
 
 #header.alt {
-	background-color: transparent;
+	background-color: #526d6b;
 }
 
 
@@ -3892,7 +3893,6 @@ body.is-menu-visible #menu {
 	-ms-transition-delay: 0.25s;
 	transition-delay: 0.25s;
 	background: #fff;
-	content: '';
 	display: block;
 	height: 2px;
 	position: absolute;
@@ -3902,7 +3902,7 @@ body.is-menu-visible #menu {
 
 /* Banner */
 
-#banner {
+.banner {
 	display: -moz-flex;
 	display: -webkit-flex;
 	display: -ms-flex;
@@ -3978,7 +3978,7 @@ body.is-menu-visible #menu {
 	color: inherit;
 }
 
-#banner .more {
+more {
 	-moz-transition: -moz-transform 0.75s ease, opacity 0.75s ease;
 	-webkit-transition: -webkit-transform 0.75s ease, opacity 0.75s ease;
 	-ms-transition: -ms-transform 0.75s ease, opacity 0.75s ease;
@@ -4160,31 +4160,39 @@ body.is-preload #banner:after {
 
 #main>header {
 	padding: 12em 0 10em 0;
-	background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../../images/banner.jpg");
-	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../../images/banner.jpg");
-	background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../../images/banner.jpg");
-	background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../../images/banner.jpg");
+	background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+	background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+	background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
 	background-attachment: fixed;
-	background-color: #2f422e56;
-	background-position: center -30%;
+	background-color: #5f836e98;
+	background-position: center -0%;
 	background-repeat: no-repeat;
 	background-size: cover;
 	text-align: center;
+
 }
 
 #mainFlorais>header {
 	padding: 12em 0 10em 0;
-	background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../../images/florais.jpg");
-	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../../images/florais.jpg");
-	background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../../images/florais.jpg");
-	background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../../images/florais.jpg");
-	background-attachment: fixed;
-	background-color: #2f422e56;
-	background-position: center 100%;
-	background-repeat: no-repeat;
+	background: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../../images/florais.jpg") no-repeat center center fixed;
 	background-size: cover;
 	text-align: center;
-}
+	position: relative; /* adiciona uma posição relativa ao elemento pai */
+	}
+	
+	#mainFlorais>header::before {
+	content: "";
+	position: absolute; 
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url("../../images/florais.jpg") no-repeat center center fixed;
+	background-size: cover;
+	z-index: -1; 
+	transform: translateZ(-1px); 
+	}
 
 #main>header h2 {
 	font-size: 1.75em;
@@ -4325,18 +4333,29 @@ body.is-mobile #main>header {
 /* Landing */
 
 body.landing #page-wrapper {
-	background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../../images/banner.jpg");
-	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../../images/banner.jpg");
-	background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../../images/banner.jpg");
-	background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../../images/banner.jpg");
-	background-attachment: fixed;
-	background-color: #2e3842;
+
+	background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+	background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+	background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+	background-attachment: center;
 	background-position: center -0%;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: cover, contain;
+	background-color: #5f836e98;
 	padding-top: 0;
 	height: 100vh;
+
+
+
 }
+
+body.landing #page-wrapper .banner2 {
+	filter: blur(100px);
+}
+
+
+
 
 body.landing #footer {
 	background-color: rgba(29, 36, 42, 0.9);
@@ -4349,19 +4368,33 @@ body.is-mobile.landing #page-wrapper {
 	background-position: center 50%;
 }
 
-body.is-mobile.landing #banner, 
+body.is-mobile.landing #banner,
 body.is-mobile.landing .wrapper.style4 {
-	background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/banner.jpg");
-	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/banner.jpg");
-	background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/banner.jpg");
-	background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/banner.jpg");
-	background-color: #2f422e;
+	background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+	background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+	background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+	background-color: #5f836e98;
 	background-position: center -0%;
 	background-repeat: no-repeat;
 	background-size: cover;
+
 
 }
 
 body.is-mobile.landing #footer {
 	background-color: rgba(29, 36, 42, 0.9);
 }
+
+  
+#parallax-section {
+	background-color: transparent;
+  }
+  
+  #parallax-section .inner {
+	background-image: url('images/banner.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 100vh; /* define a altura da seção para o tamanho da tela */
+  }
+  

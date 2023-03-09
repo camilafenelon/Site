@@ -18,32 +18,49 @@
 			<div id="page-wrapper">
 
 				<!-- Header -->
-					<header id="header">
-						<h1><a href="index.html">CAMILA FENELON</a></h1>
-						<nav id="nav">
-							<ul>
-								<li class="special">
-									<a href="#menu" class="menuToggle"><span>Menu</span></a>
-									<div id="menu">
-										<ul>
-											<li><a href="index.html">Home</a></li>
-											<li><a href="#one" class="more scrolly">Quem sou</a></li>
-											<li><a href="#three" class="more scrolly">Serviços</a></li>
-											<!--
-											<li><a href="generic.html">Generic</a></li>
-											<li><a href="elements.html">Elements</a></li>
-											<li><a href="#">Sign Up</a></li>
-											<li><a href="#">Log In</a></li> -->
-										</ul>
-									</div>
-								</li>
-							</ul>
-						</nav>
-					</header>
-
+				<header id="header" class="alt" style="background-color: #4b6860;"> 
+					<a href="index.html">	<h1>CAMILA FENELON</a></h1>  
+					<nav id="nav">
+						<ul>
+							
+							<a href="https://www.instagram.com/camilafenelon/" class="icon brands fa-instagram"
+								style="font-size: 20px;"></a>
+		
+							&nbsp&nbsp&nbsp
+		
+							<a href="https://api.whatsapp.com/send?phone=5548991359917&text" class="icon brands fa-whatsapp"
+								style="font-size: 20px;"></a>
+							<li class="special">
+		
+								<a href="#menu" class="menuToggle"><span> </span></a>
+								<div id="menu">
+									<ul>
+		
+										<li><a href="index.html">Home</a></li>
+										<li><a href="#one" class="more scrolly">Quem sou</a></li>
+										<li><a href="#two" class="more scrolly">Por onde andei...</a></li>
+										<li><a href="#cta" class="more scrolly">Depoimentos</a></li>
+										<li><a href="#three" class="more scrolly">Serviços</a></li>
+										<li><a href="#four" class="more scrolly">Contato</a></li>
+		
+										<!--
+													<li><a href="generic.html">Generic</a></li>
+													<li><a href="elements.html">Elements</a></li>
+													<li><a href="#">Sign Up</a></li>
+													<li><a href="#">Log In</a></li> -->
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</nav>
+				</header>
+			
 				<!-- Main -->
 					<article id="mainFlorais">
+						
 						<header>
+							
+						
 							<h2> FLORAIS DE BACH</h2>
 							<p>“Trate a causa, não o efeito” <br/><b><i>Dr. Edward Bach</i></b></p>
 						</header>
@@ -104,6 +121,26 @@ plantas, trazendo uma integração mais profunda e refinada para o tratamento.</
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<script>
+
+				var header = document.querySelector("#mainFlorais > header");
+		
+				function parallax() {
+					var scrollTop = window.pageYOffset;
+					var headerHeight = header.clientHeight;
+					var scrollBottom = scrollTop + window.innerHeight;
+		
+					if (scrollBottom > header.offsetTop && scrollTop < header.offsetTop + headerHeight) {
+						header.classList.add("parallax");
+					} else {
+						header.classList.remove("parallax");
+					}
+				}
+		
+				window.addEventListener("scroll", parallax);
+		
+			</script>
 
 	</body>
 </html>
