@@ -112,6 +112,7 @@ section {
 
 body {
 	line-height: 1;
+
 }
 
 ol,
@@ -168,7 +169,10 @@ textarea {
 
 html {
 	box-sizing: border-box;
+	
 }
+
+
 
 *,
 *:before,
@@ -2289,7 +2293,7 @@ input[type="radio"]+label:before {
 	display: block;
 	height: inherit;
 	line-height: inherit;
-	
+
 }
 
 /* Position the "next button" to the right */
@@ -2301,7 +2305,7 @@ input[type="radio"]+label:before {
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-	background-color:#4b6860;
+	background-color: #4b6860;
 }
 
 /* Caption text */
@@ -4044,7 +4048,7 @@ more {
 	background: #2e3842;
 	display: block;
 	width: 100%;
-	height: 100%;
+	height: 1150px; 
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -4054,8 +4058,8 @@ more {
 @media screen and (max-width: 736px) {
 
 	#banner {
-		padding: 7em 3em 5em 3em;
-		height: auto;
+		padding: 2em 3em 5em 3em;
+		height: 130px;
 		min-height: 0;
 		background-size: contain;
 	}
@@ -4167,7 +4171,7 @@ body.is-preload #banner:after {
 #main>header {
 	padding: 12em 0 10em 0;
 	background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
-	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.308)); 
 	background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
 	background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
 	background-attachment: fixed;
@@ -4176,6 +4180,7 @@ body.is-preload #banner:after {
 	background-repeat: no-repeat;
 	background-size: cover;
 	text-align: center;
+	overflow: hidden;
 
 }
 
@@ -4184,21 +4189,22 @@ body.is-preload #banner:after {
 	background: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../../images/florais.jpg") no-repeat center center fixed;
 	background-size: cover;
 	text-align: center;
-	position: relative; /* adiciona uma posição relativa ao elemento pai */
-	}
-	
-	#mainFlorais>header::before {
+	position: relative;
+	/* adiciona uma posição relativa ao elemento pai */
+}
+
+#mainFlorais>header::before {
 	content: "";
-	position: absolute; 
+	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
 	background: url("../../images/florais.jpg") no-repeat center center fixed;
 	background-size: cover;
-	z-index: -1; 
-	transform: translateZ(-1px); 
-	}
+	z-index: -1;
+	transform: translateZ(-1px);
+}
 
 #main>header h2 {
 	font-size: 1.75em;
@@ -4261,7 +4267,7 @@ body.is-mobile #main>header {
 
 #footer {
 	padding: 2em 0 1em 0;
-	background-color: #4b6860; 
+	background-color: #4b6860;
 	text-align: center;
 }
 
@@ -4343,7 +4349,7 @@ body.is-mobile #main>header {
 body.landing #page-wrapper {
 
 	background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.308));
 	background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 	background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 	background-attachment: center;
@@ -4379,7 +4385,7 @@ body.is-mobile.landing #page-wrapper {
 body.is-mobile.landing #banner,
 body.is-mobile.landing .wrapper.style4 {
 	background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.308));
 	background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 	background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 	background-color: #5f836e98;
@@ -4394,15 +4400,15 @@ body.is-mobile.landing #footer {
 	background-color: rgba(29, 36, 42, 0.9);
 }
 
-  
+
 #parallax-section {
 	background-color: transparent;
-  }
-  
-  #parallax-section .inner {
+}
+
+#parallax-section .inner {
 	background-image: url('images/banner.jpg');
 	background-size: cover;
 	background-position: center;
-	height: 100vh; /* define a altura da seção para o tamanho da tela */
-  }
-  
+	height: 100vh;
+	/* define a altura da seção para o tamanho da tela */
+}
