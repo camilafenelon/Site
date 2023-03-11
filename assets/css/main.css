@@ -1,6 +1,7 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic");
 @import url('https://fonts.cdnfonts.com/css/glacial-indifference-2');
+@import url('https://fonts.cdnfonts.com/css/serenity-2');
 /*
 	Spectral by HTML5 UP
 	html5up.net | @ajlkn
@@ -3931,7 +3932,7 @@ body.is-menu-visible #menu {
 	overflow: hidden;
 	position: center;
 	text-align: center;
-	background-position: center 50%;
+	background-position: center 60%;
 }
 
 #banner h2 {
@@ -3949,6 +3950,19 @@ body.is-menu-visible #menu {
 	padding: 0.35em 1em;
 	position: relative;
 	z-index: 1;
+}
+
+#banner h1 { 
+	-moz-transform: scale(1);
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	-moz-transition: -moz-transform 0.5s ease, opacity 0.5s ease;
+	-webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease;
+	-ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
+	transition: transform 0.5s ease, opacity 0.5s ease;
+	font-size: 20px; 
+	justify-content: center;
 }
 
 #banner h2:before,
@@ -4059,7 +4073,7 @@ more {
 
 	#banner {
 		padding: 2em 3em 5em 3em;
-		height: 130px;
+		height: 150px; 
 		min-height: 0;
 		background-size: contain;
 	}
@@ -4169,7 +4183,7 @@ body.is-preload #banner:after {
 /* Main */
 
 #main>header {
-	padding: 12em 0 10em 0;
+	padding: 13em 0 10em 0; 
 	background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
 	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.308)); 
 	background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
@@ -4348,10 +4362,10 @@ body.is-mobile #main>header {
 
 body.landing #page-wrapper {
 
-	background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.308));
-	background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-	background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+	background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.308)); 
+	background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+	background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
 	background-attachment: center;
 	background-position: center -0%;
 	background-repeat: no-repeat;
